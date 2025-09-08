@@ -15,12 +15,12 @@ func names() (string, string) {
 }
 
 func main() {
-	email := "pratyid.com"
-	if leng := len(email); leng < 20 {
-		fmt.Println("good")
-	} else {
-		fmt.Println("not good")
-	}
+	//email := "pratyid.com"
+	// if leng := len(email); leng < 20 {
+	// 	fmt.Println("good")
+	// } else {
+	// 	fmt.Println("not good")
+	// }
 	fmt.Println(add(2, 3))
 	fmt.Println(temp(add, 4))
 
@@ -29,4 +29,14 @@ func main() {
 	fmt.Println(pratyush.age)
 	fmt.Println(r.area())
 	fmt.Println(t.area())
+	e := email{
+		isSubscribed: true,
+		body:         "this is subscribed",
+	}
+	ins := insta{
+		isSubscribed: true,
+		body:         "this is subscribed",
+	}
+	fmt.Println(e.cost())
+	fmt.Println(ins.cost())
 }
