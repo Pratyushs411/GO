@@ -52,4 +52,5 @@ func main() {
 	printTo10()
 	fmt.Printf("\ncost of bulk messages : %v \n", bulkMessages(10))
 	sumUptoN(10)
+
 }
