@@ -13,7 +13,13 @@ func temp(temp1 func(int, int) int, y int) int {
 func names() (string, string) {
 	return "pratyush", "aarush"
 }
-
+func divide(x, y float64) (float64, error) {
+	if y == 0 {
+		return 0.0, divideError{dividend: x}
+	} else {
+		return x / y, nil
+	}
+}
 func main() {
 	//email := "pratyid.com"
 	// if leng := len(email); leng < 20 {
@@ -39,4 +45,8 @@ func main() {
 	}
 	fmt.Println(e.cost())
 	fmt.Println(ins.cost())
+	convert("123")
+	convert("42b")
+	fmt.Println(divide(2, 3))
+	fmt.Println(divide(2, 0))
 }
