@@ -49,4 +49,7 @@ func main() {
 	convert("42b")
 	fmt.Println(divide(2, 3))
 	fmt.Println(divide(2, 0))
+	printTo10()
+	fmt.Printf("\ncost of bulk messages : %v \n", bulkMessages(10))
+	sumUptoN(10)
 }
