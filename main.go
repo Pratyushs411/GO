@@ -52,5 +52,13 @@ func main() {
 	printTo10()
 	fmt.Printf("\ncost of bulk messages : %v \n", bulkMessages(10))
 	sumUptoN(10)
-
+	ages["pratyush"] = 21
+	ages["aarush"] = 17
+	ages["dilpreet"] = 22
+	names := []string{"pratyush", "aarush", "aditya", "hushraj", "Dev"}
+	ages := []int{21, 17, 20, 22, 21}
+	ageMap := getMap(names, ages)
+	printMap(ageMap)
+	delete(ageMap, "pratyush")
+	printMap(ageMap)
 }
