@@ -61,4 +61,5 @@ func main() {
 	printMap(ageMap)
 	delete(ageMap, "pratyush")
 	printMap(ageMap)
+	messagePrint("how are you")
 }
